@@ -9,6 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="*" element={<AdminLayout />} />
+        <Route path="/register" element={<h2>HOLA MUNDO</h2>} />
       </Routes>
     </Router>
   )

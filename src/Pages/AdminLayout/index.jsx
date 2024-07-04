@@ -21,7 +21,7 @@ export default function AdminLayout() {
 
     const getRoutes = (routes) => {
         return routes.map((route, index) => {
-            console.log(route.path)
+            
             return (
             <Route path={route.path} element={route.component} key={index} exact />
         )})
@@ -38,11 +38,9 @@ export default function AdminLayout() {
                         <Sidebar routes={routes} />
                     </Col>
                     <Col md={9} className="">
-                    <Routes>
-                    {getRoutes(routes)}
-
-
-                    </Routes>
+                        <Routes>
+                        {getRoutes(routes)}
+                        </Routes>
                     </Col>
                 </Row>
             </Container>

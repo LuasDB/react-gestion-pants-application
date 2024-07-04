@@ -49,6 +49,11 @@ const useFetchDataTables = ({collection,server})=>{
     }
 }
 
+
+
+
+
+
 export default function Productos(){
     const { data,error,loading } = useFetchDataTables({
         collection:'products',
